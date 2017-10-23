@@ -1,0 +1,175 @@
+/****************************************************
+Name: Fluid Tile Customizations
+Version: v00.01
+Created: 01.09.2017
+updated: 01.09.2016
+Created by: Stefan van Liempt - CY2
+Comments: This CSS supports the branding of tiles
+ on the Fluid homepage
+****************************************************/
+
+/* Start of Selfservice Customizations*/
+
+/****************************************************
+Our custom font. Make sure you put the font on the
+weserver in the 'fonts' directory
+****************************************************/
+
+@font-face {
+ font-family: Vestula;
+ src: url("../fonts/vestula-regular.woff2") format("woff2"),
+url("../fonts/vestula-regular.woff") format("woff");
+ font-weight: normal;
+ font-style: normal;
+}
+
+/****************************************************
+Define All Tiles in the project LEI_V_SS
+****************************************************/
+div[id^="win"][id*="GROUPLET"][onclick*="SSR_RS_SELFSERV_MGMT.SSS_RS_STDNT_REQ.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#2c712d;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SNS_MENU_STD_FLD.SNS_SS_FLD_NOTIF.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#9eba2e;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SA_LEARNER_SERVICES.SSS_MY_CRSEHIST.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#5cb1eb;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SNS_CUSTOMIZATIONS_NLD.SNS_SS_MYCOMM_CNTR.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#34a3a9;
+ }
+div[id^="win"][id*="GROUPLET"][onclick*="SNS_CUSTOMIZATIONS_NLD.SNS_SSENRL_CART.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#b02079;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SA_LEARNER_SERVICES.SSR_SSENRL_DROP.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#be1908;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SA_LEARNER_SERVICES.SSR_SSENRL_SCHD_W.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#f46e32;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SA_LEARNER_SERVICES.SSS_GRAD_APPLY.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#2c712d;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="CC_PORTFOLIO.SSS_PRSNLDATA_SUMM.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#9eba2e;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="www.bibliotheek.universiteitleiden.nl"][onclick*="LEI_V_SS"].ps_box-group.psc_layout.nuilp{
+ background:#5cb1eb;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="www.studiegids.leidenuniv.nl"][onclick*="LEI_V_SS"].ps_box-group.psc_layout.nuilp{
+ background:#34a3a9;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="CY2_STUDENT_SS"][onclick*="LEI_V_SS"].ps_box-group.psc_layout.nuilp{
+ background:#b02079;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SNS_CUSTOMIZATIONS_NLD.SNS_SS_PET_REQ_MNT.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#be1908;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SNS_MENU_STD_FLD.SNS_FLD_STD_ADM.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#f46e32;
+ }
+div[id^="win"][id*="GROUPLET"][onclick*="LEI_V_SS_LINKS"][onclick*="LEI_V_SS"].ps_box-group.psc_layout.nuilp{
+ background:#fcbe2a;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SA_LEARNER_SERVICES.SNS_ACAD_CERT_STAT_W.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#9eba2e;
+}
+
+/****************************************************
+Embedded Background logo of leiden University
+****************************************************/
+/*Give the tile the same color as the homepage background - we don't want to see it*/
+div.ps_grid-div.ps_grid-body > div[id*="_row_"]:last-child > * >
+[id^="win"][id*="GROUPLET"]:not([onclick]):not([role]).ps_box-group.psc_layout.nuilp{
+ background:#f0f0f0;
+ %BP(box-shadow:none);
+}
+/*Give the tile title the same color as the tile background - we don't want to see it*/
+div.ps_grid-div.ps_grid-body > div[id*="_row_"]:last-child > * >
+[id^="win"][id*="GROUPLET"]:not([onclick]):not([role]).ps_box-group.psc_layout.nuilp > h2 > span{
+ color:#f0f0f0;
+}
+/*Give the embedded image a width and opacity*/
+div.ps_grid-div.ps_grid-body > div[id*="_row_"]:last-child > * >
+[id^="win"][id*="GROUPLET"]:not([onclick]):not([role]).ps_box-group.psc_layout.nuilp> div > img.ps_process{
+ max-width:100%;
+ max-height:100%
+ width:190px;
+ opacity: 0.6;
+}
+
+/****************************************************
+Styling the progress Chart
+****************************************************/
+
+div[id^="win"][id*="GROUPLET"][onclick*="SA_LEARNER_SERVICES.SAA_SS_DPR_ADB.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp{
+ background:#ffffff;
+}
+div[id^="win"][id*="GROUPLET"][onclick*="SA_LEARNER_SERVICES.SAA_SS_DPR_ADB.GBL"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp
+>.ps_box-grouplet > div[id*="CHART_GB"]{
+ background:#ffffff;
+
+}
+
+/****************************************************
+Hover colors on Tiles and progress Chart
+****************************************************/
+
+div[id^="win"][id*="GROUPLET"][onclick*="LEI_V_SS"].ps_box-group.psc_layout.nuilp >.ps_box-grouplet > div[id*="CHART_GB"]:hover{
+ background-color:#7f88ab;
+ opacity:0.5
+}
+div[id^="win"][id*="GROUPLET"][onclick*="LEI_V_SS=Y"].ps_box-group.psc_layout.nuilp:hover{
+ background-color:#7f88ab;
+ opacity:0.5;
+}
+
+/****************************************************
+Make square tiles without drop-shadow
+****************************************************/
+
+div[id^="win"][id*="GROUPLET"][onclick*="LEI_V_SS"].ps_box-group.psc_layout.psc_rowact.nuilp
+{
+ %BP(border-radius: 0);
+ %BP(box-shadow:none);
+}
+
+/****************************************************
+Place tile images in the upper-left corner
+Also place the font below the images
+****************************************************/
+
+div[id^="win"][id*="GROUPLET"][onclick*="LEI_V_SS"].ps_box-group.psc_layout.nuilp > div > img.ps_process{
+ margin-left:10%;
+ margin-top:0em;
+ width:65px;
+}
+
+div[id^="win"][id*="GROUPLET"][onclick*="LEI_V_SS"].ps_box-group.psc_layout.nuilp> h2 > span{
+ margin-top:65%;
+ margin-left:10%;
+ font: normal 22px Vestula;
+ color: #ffffff;
+}
+
+/****************************************************
+Homepage background - copied from Default Macro
+****************************************************/
+
+/* default homepage background */
+:root:not(.psc_mode-ag):not(.psc_mode-md) .pt_homepage { /* 855-01a do not change if running with AG / MD */
+ background-image:none; /* reset to allow usage of only background */
+ background-color:none;/* reset to allow usage of only background */
+ background:#f0f0f0;
+}
+
+/****************************************************
+Other styles
+****************************************************/
+
+/* wrap-text in container */
+div[id^="win"][id*="GROUPLET"][onclick*="LEI_V_SS"].ps_box-group.psc_layout.psc_rowact.nuilp > h2 > .ps-label {
+ white-space:normal;
+}
+
+/* End of Selfservice Customizations*/
